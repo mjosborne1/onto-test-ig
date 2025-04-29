@@ -1,0 +1,141 @@
+# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+# │  used properties are included. For a list of all supported properties and their functions,     │
+# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: ontotestig.csiro.au
+canonical: http://ontotestig.csiro.au/fhir
+name: OntoserverTestImplementationGuide
+title: Ontoserver Test Implementation Guide
+description: This implementation guide is provided to support testing Ontoserver terminology server operations
+status: draft # draft | active | retired | unknown
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: draft
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default FMM level for the artifacts in this IG
+    valueInteger: 0
+version: 0.1.0
+fhirVersion: 4.0.1
+copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
+copyrightYear: 2025
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+license: CC0-1.0 
+publisher:
+  name: CSIRO Australian e-Health Research Centre
+  url: https://aehrc.csiro.au
+  # email: test@example.org
+jurisdiction: urn:iso:std:iso:3166#AU 
+# The dependencies property corresponds to IG.dependsOn. The key is the
+# package id and the value is the version (or dev/current). For advanced
+# use cases, the value can be an object with keys for id, uri, and version.
+dependencies:
+  hl7.fhir.au.base:
+    version: current
+  hl7.fhir.au.core: 
+    version: current
+  hl7.fhir.uv.ips: 
+    version: current
+# The pages property corresponds to IG.definition.page. SUSHI can
+# auto-generate the page list, but if the author includes pages in
+# this file, it is assumed that the author will fully manage the
+# pages section and SUSHI will not generate any page entries.
+# The page file name is used as the key. If title is not provided,
+# then the title will be generated from the file name.  If a
+# generation value is not provided, it will be inferred from the
+# file name extension.  Any subproperties that are valid filenames
+# with supported extensions (e.g., .md/.xml) will be treated as
+# sub-pages.
+pages:
+  index.md:
+    title: Home
+  conformance.md:
+  guidance.md:    
+  fhirartifacts.md:
+    title: FHIR Artefacts
+    artifacts.html:
+      title: Artefacts Summary
+    profiles-and-extensions.md:
+    terminology.md:
+    capability-statements.md: 
+      title: Actors and Capabilities
+  examples.md:
+  support.md:
+    downloads.md:
+    license.md: 
+      title: License and Legal
+  changes.md:
+    title: Change Log
+  # ImplementationGuide-hl7.fhir.au.erequesting.md:
+    # title: AU eRequesting ImplementationGuide Resource
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    input/resources
+    fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+    - input/resources
+  special-url:
+    - https://ranzcr.com/fhir/ValueSet/radiology-referral
+    - http://terminology.hl7.org.au/ValueSet/au-erequesting-coverage-type
+    - http://terminology.hl7.org.au/ValueSet/au-erequesting-request-status
+    - http://terminology.hl7.org.au/ValueSet/au-erequesting-task-status
+    #- input/summaries
+  path-expansion-params: '../../input/_resources/exp-params.json' 
+  active-tables: false
+  apply-contact: true
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-version: true
+  show-inherited-invariants: false
+  usage-stats-opt-out: true
+  excludexml: false
+  excludejson: false
+  excludettl: false
+  excludemap: true
+  shownav: false
+  # generate: #what does this do - todo: remove and see4
+  #   - xml
+  #   - json
+  # no-validate:
+  #   - '*/*'  # does not seems to work
+  #   - 'StructureDefinition/*'
+  # html-exempt:  
+  # ipa-comparison: 
+  #   - '{current}'
+  logging:
+    - tx #tx: Messages describing the use of the terminology server (for debugging)
+    - html #html: Log when validating an html page (troubleshooting only - leave off)
+    - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
+    - init #init: Messages describing the start up process (for debugging)
+    - progress #progress: Overall progress messages
+  releaselabel: CI Build
+  fmm-definition: https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels
+#
+# The parameters property represents IG.definition.parameter. Rather
+# than a list of code/value pairs (as in the ImplementationGuide
+# resource), the code is the YAML key. If a parameter allows repeating
+# values, the value in the YAML should be a sequence/array.
+# For parameters defined by core FHIR see:
+# http://build.fhir.org/codesystem-guide-parameter-code.html
+# For parameters defined by the FHIR Tools IG see:
+# http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+#
+#
+# ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
+# │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
+# │  resource. These properties are less commonly needed than those above.                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+#
+# Those who need more control or want to add additional details to the contact values can use
+# contact directly and follow the format outlined in the ImplementationGuide resource and
+# ContactDetail.
+#
+contact:
+  - name: CSIRO AEHRC
+    telecom:
+      - system: url # phone | fax | email | pager | url | sms | other
+        value: https://aehrc.csiro.au
+        use: work
+
