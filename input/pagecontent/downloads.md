@@ -16,32 +16,11 @@ The following package file includes an NPM package file used by many of the FHIR
 
 See the overview on [validating FHIR profiles and resources](http://hl7.org/fhir/R4/validation.html) for more information about validating profiles and how to use these artefacts.
 
-### Examples 
-
-All examples included in this implementation guide are available for download:
-
-- [XML](examples.xml.zip)
-- [JSON](examples.json.zip)
-- [TTL](examples.ttl.zip)
-
-### Consolidated CSV and Excel file representations of profiles 
-
-All the profile information for the {{site.data.fhir.ig.title}} in a single CSV or Excel file, which may be helpful to testers and analysts to review element properties across profiles in a single table:
-
-- [CSV(compressed folder)](csvs.zip)
-- [Excel(compressed folder)](excels.zip)
 
 ### Implementation Guide Details
 
 The following link to the ImplementationGuide resource defines the technical details of this publication, including dependencies and publishing parameters:
 
-- [XML](ImplementationGuide-hl7.fhir.au.ereq.xml) 
-- [JSON](ImplementationGuide-hl7.fhir.au.ereq.json)
-- [TTL](ImplementationGuide-hl7.fhir.au.ereq.ttl)
-
-### OpenAPI (a.k.a., Swagger) Definition Files
-
- The following [OpenAPI](https://www.openapis.org/) files are generated from the AU eRequesting CapabilityStatements:
-
-- [AU eRequesting Placer](au-erequesting-placer.openapi.json)
-- [AU eRequesting Server](au-erequesting-server.openapi.json)
+- [XML](ImplementationGuide-ontotestig.csiro.au.xml) 
+- [JSON](ImplementationGuide-ontotestig.csiro.au.json)
+- [TTL](ImplementationGuide-ontotestig.csiro.au.ttl)

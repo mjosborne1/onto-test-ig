@@ -21,27 +21,7 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
       <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="sex-and-gender.html">Sex and Gender</a>
-      </li>
-      <li>
-        <a href="auereqdi.html">AU eRequesting Data for Interoperability Mappings</a>
-      </li>
-      <li>
-        <a href="relationship.html">Relationships to Other Specifications</a>
-      </li>
-      <li>
-        <a href="variance.html">AU Variance Statement</a>
-      </li>
-      <li>
-        <a href="future.html">Future of AU eRequesting </a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="use-cases.html">Use Cases</a>
+    </a>   
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
@@ -56,10 +36,7 @@
       </li>
       <li>
         <a href="terminology.html">Terminology</a>
-      </li>
-      <li>
-        <a href="capability-statements.html">Actors and Capabilities</a>
-      </li> 
+      </li>     
     </ul>
   </li>
   <li>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActorDefinition xmlns="http://hl7.org/fhir">
+  <id value="actor-requester"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/> 
+  </extension>
+  <url value="http://ontotestig.csiro.au/fhir/ActorDefinition/actor-requester" />
+  <name value="OntoTestIGRequester"/> 
+  <title value="Onto Test IG Requester"/> 
+  <status value="active"/>
+  <description value="The Onto Test IG Requester is a system that creates and initiates a data access request to retrieve core digital health and administrative information."/> 
+  <type value="system"/> 
+  <documentation value="An Onto Test IG Client, also known as Onto Test IG Requester:&#xa;&#xa;
+- **SHALL** accept resources containing any valid value for *Must Support* elements without error&#xa;&#xa;
+- **SHALL** accept resources containing *Must Support* elements with Missing Data or Suppressed Data without error&#xa;&#xa;
+How the system processes the resource depends on local requirements that could align with obligation terms such as [reject invalid](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-reject-invalid), [correctly handle](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-handle), [persist](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-persist), [display](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-display), or [ignore](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-ignore).&#xa;&#xa;
+When a *Must Support* element requires a more tightly stated obligation, this obligation is specified in the Onto Test IG Requester [obligation extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) on the element definition."/>
+  <capabilities value="http://ontotestig.csiro.au/fhir/CapabilityStatement/actor-requester"/>
+</ActorDefinition>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActorDefinition xmlns="http://hl7.org/fhir">
+  <id value="actor-responder"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/> 
+  </extension>
+  <url value="http://ontotestig.csiro.au/fhir/ActorDefinition/actor-responder" />
+  <name value="OntoTestResponder"/> 
+  <title value="Onto Test IG Responder"/> 
+  <status value="active"/>
+  <description value="The Onto Test IG Responder is a system responsible for providing responses to queries submitted by Onto Test IG Requesters."/> 
+  <type value="system"/> 
+  <documentation value="An Onto Test IG Responder, also known as Onto Test IG Server:&#xa;&#xa;
+- **SHALL** correctly populate all *Must Support* elements if they know a value for the element&#xa;&#xa;
+- **SHALL** implement the requirements on Suppressed Data when an element is NOT allowed to be shared&#xa;&#xa;
+- **SHALL** implement the requirements on Missing Data when an element value is NOT known&#xa;&#xa;
+When a *Must Support* element requires a more tightly stated obligation, this obligation is specified in the Onto Test IG Responder [obligation extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) on the element definition."/>
+  <capabilities value="http://ontotestig.csiro.au/fhir/CapabilityStatement/actor-responder"/>
+</ActorDefinition>

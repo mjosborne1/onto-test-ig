@@ -1,7 +1,6 @@
 ### Introduction
-Example IG for testing Ontoserver validation in diagnostic requesting in an Australian context. 
+Example IG for testing Ontoserver terminology validation in multiple jurisidictions e.g. Australia and Canada. 
 This IG defines the data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests.
-
 
 ### Dependencies
 
@@ -19,10 +18,9 @@ This guide is divided into several pages which are listed at the top of each pag
   - [Artefacts Summary](artifacts.html): This page lists the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide to support electronic requesting. Each profile page includes a narrative description and guidance, formal definition and a "Notes" section which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
   - [Terminology](terminology.html): This page lists the value sets and code systems supported in this guide.
-  - [Actors and Capabilities](capability-statements.html): This page defines the AU eRequesting actors and their respective CapabilityStatements.
 - [Examples](examples.html): This page lists all the examples used in this guide.
-- [Support](support.html): These pages provide supporting material for implementation of AU eRequesting.
+- [Support](support.html): These pages provide supporting material for implementation of the Ontoserver Testing IG.
   - [Downloads](downloads.html): This page provides links to downloadable artefacts.
-  - [License and Legal](license.html): This page outlines the license and legal requirements for material in AU eRequesting.
+  - [License and Legal](license.html): This page outlines the license and legal requirements for material in the Ontoserver Testing IG.
 - [Change Log](changes.html): This page documents the changes across versions of this guide.
 
